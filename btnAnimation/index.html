@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button animation</title>
+    <style>
+        body{
+           /* Itens um abaixo do outro */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #1d2834;
+            /* distanciar itens um do outro */
+            gap: 40px;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            place-items: center;
+            height: 100vh;
+            background:#1d2834;       
+        }
+        .btn{
+            width: 200px;
+            height: 50px;
+            font-weight: bold;
+            font-size: 30px;
+            border: none;
+            border-radius: 1000px;
+            color: #000;
+            transition: all 0.6s ease-in-out 0s;
+            box-shadow: inset 0 0 20px #000;
+        }
+        .btn:hover{
+            background: transparent;
+            color: #00ffcb;
+            transform: scale(1.5)rotate(360deg);
+            box-shadow: 0 0 60px rgba(0, 255, 203, .64);
+            cursor: grab;
+            border: 2px solid #00ffcb;
+
+        }
+        .btn1{
+            padding: auto;
+            width: 200px;
+            height: 50px;
+            font-weight: bold;
+            font-size: 30px;
+            border: none;
+            border-radius: 1000px;
+            color: #000;
+            transition: all 0.6s ease-in-out 0s;
+            box-shadow: inset 0 0 20px #000;
+        }
+        .btn1:hover{
+            background: transparent;
+            color: #00ffcb;
+            transform: scale(1.5) matrix(1, 0, 0, 1, 0, 0);
+            box-shadow: 0 0 60px rgba(0, 255, 203, .64);
+            cursor: grab;
+
+        }
+        .btn2{
+            padding: auto;
+            width: 200px;
+            height: 50px;
+            font-weight: bold;
+            font-size: 30px;
+            border: none;
+            border-radius: 1000px;
+            color: #000;
+            transition: all 0.6s ease-in-out 0s;
+            box-shadow: inset 0 0 20px #000;
+        }
+        .btn2:hover{
+            background: transparent;
+            color: #00ffcb;
+            /* animação vibrando */
+            transform: scale(1.5) translate(10px, 10px)
+            box-shadow: 0 0 60px rgba(0, 255, 203, .64);
+            cursor: grab;
+
+        }
+        </style>
+</head>
+<body>
+    <button class="btn">Button</button>
+    <button class="btn1">Button 2</button>
+    <button class="btn2">Button 3</button>
+
+</body>
+</html>
