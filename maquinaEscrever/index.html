@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maquina de escrever </title>
+    <style>
+    
+        
+        /* Define a animação */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Aplica a animação ao elemento */
+.elemento {
+    font-family: monospace;
+  overflow: hidden; /* "esconde" o texto que ainda não foi digitado */
+  border-right: .15em solid orange; /* cria o cursor piscando */
+  white-space: nowrap; /* impede quebra de linha */
+  margin: 0 auto; /* centraliza o elemento */
+  letter-spacing: .15em; /* adiciona espaço entre as letras */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* Define a animação do cursor piscando */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+    </style>
+</head>
+<body>
+    <div class="elemento">Ola mundo</div>
+</body>
+</html>
